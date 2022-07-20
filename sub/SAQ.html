@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Duvidas Aluminio Costruindo</title>
+    <link rel="stylesheet" href="css/estilos2.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="img.alu/icon.lo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Alumínio Construindo</h1>
+      <h3 class="formulario__subtitulo">Duvidas Gerais</h3>
+      <p class="formulario__parrafo">
+        Preencha seus dados e sua duvida
+      </p>
+
+      <label for="cliente" class="formulario__label">Qual é o seu nome </label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Qual é o seu nome completo ?"
+      />
+
+      <label for="data" class="formulario__label"
+        >Indique a data de Hoje</label
+      >
+      <input
+        id="data"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="servico" class="formulario__label"
+        >Qual serviço voce deseja solicitar ?</label
+      >
+      <select id="servico" name="listaservicos" class="formulario__input">
+        <option>Lajes - $VALOR</option>
+        <option>Blocos - $VALOR</option>
+      </select>
+
+      <label for="duvida" class="formulario__titulo">Qual é sua duvida </label>
+      <input
+        id="duvida"
+        type="text"
+        class="formulario__input"
+        placeholder="Sua messagem"/>
+      <div id="resposta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar WhatsApp</button>
+    </form>
+    <script src="js/enviot.js"></script>
+  </body>
+</html>
